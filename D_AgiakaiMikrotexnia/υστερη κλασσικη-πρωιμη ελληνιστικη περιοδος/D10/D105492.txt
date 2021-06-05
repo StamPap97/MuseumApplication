@@ -1,0 +1,12 @@
+object_name : "Λήκυθος με προτομή Αφροδίτης",
+        img:'./img/D105492.jpg',
+        made_of: 'Λίθος',
+        origins: 'Τανάγρα Βοιωτίας',
+        early_date : '375 π.Χ.',
+        late_date : '400 π.Χ.',
+        period:'',
+        dimensions: '',
+        object_type : "λήκυθος",
+        sub_collection : 'Ύστερη Κλασσική περίοδος',
+        path: 'Exhibitions\D_Ysterh\D10',
+        ex_description:' no'

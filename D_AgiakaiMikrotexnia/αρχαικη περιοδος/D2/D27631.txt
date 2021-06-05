@@ -1,0 +1,12 @@
+object_name : "'Μηλιακός' πιθαμφορέας",
+        img:'./img/D27631.jpg',
+        made_of: '',
+        origins: 'Aπό τη Μήλο. Πιθανόν παριανού εργαστηρίου.',
+        early_date : '640 π.Χ.',
+        late_date : '650 π.Χ.',
+        period:'',
+        dimensions: '',
+        object_type : "πιθαμφορέας",
+        sub_collection : 'Αρχαϊκή Περίοδος Μικροτεχίας',
+        path: 'Exhibitions\D_Arxaiki\D2',
+        ex_description:'  ' 

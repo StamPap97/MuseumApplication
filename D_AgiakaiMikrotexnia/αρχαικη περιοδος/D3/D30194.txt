@@ -1,0 +1,12 @@
+object_name : "Αττικός μελανόμορφος ταφικός αμφορέας",
+        img:'./img/D30194.jpg',
+        made_of: 'Μελανόμορφος',
+        origins: 'Από την Αθήνα.',
+        early_date : '610 π.Χ.',
+        late_date : '620 π.Χ.',
+        period:'',
+        dimensions: '',
+        object_type : "ταφικός αμφορέας",
+        sub_collection : 'Αρχαϊκή Περίοδος Μικροτεχίας',
+        path: 'Exhibitions\D_Arxaiki\D3',
+        ex_description:' ' 

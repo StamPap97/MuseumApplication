@@ -1,0 +1,12 @@
+object_name : "Βοιωτικός πιθαμφορέας με διπλές λαβές",
+        img:'./img/D48746.jpg',
+        made_of: '',
+        origins: 'Από τη Θήβα.',
+        early_date : '670 π.Χ.',
+        late_date : '680 π.Χ.',
+        period:'Νεότερη Νεολιθική',
+        dimensions: '',
+        object_type : "Πιθαμφορέας",
+        sub_collection : 'Αρχαϊκή Περίοδος Μικροτεχίας',
+        path: 'Exhibitions\D_Arxaiki\D4',
+        ex_description: 'no ' 

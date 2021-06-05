@@ -1,0 +1,12 @@
+object_name : "Αττική ερυθρόμορφη υδρία",
+        img:'./img/D74982.jpg',
+        made_of: '',
+        origins:'Από την Εύβοια',
+        early_date : '350 π.Χ.',
+        late_date : '375 π.Χ.',
+        period:'Του Ζωγράφου του Ιππολύτου',
+        dimensions: '',
+        object_type : "υδρία",
+        sub_collection : 'Ύστερη Κλασσική περίοδος',
+        path: 'Exhibitions\D_Ysterh\D7',
+        ex_description:'Φτερωτός Έρωτας ποτίζει άνθη. '

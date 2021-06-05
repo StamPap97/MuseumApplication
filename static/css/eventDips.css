@@ -1,0 +1,26 @@
+#events-display{
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3%;
+}
+.textText{
+    padding-bottom: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    line-height: 1.8;
+}
+.eveimg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 60vh;
+    max-width: 90%;
+    min-width: 200px;
+}
+.eveTitle{
+    margin-left: 3%;
+    font-size: 26px;
+}
+

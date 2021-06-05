@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <!-- my links -->
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel = "stylesheet" href="../css/footerstyle.css">
+    <link rel="stylesheet" href="../css/photogallery.css">
+    <link rel="stylesheet" href="../css/main_carousel.css">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    
+    <title>Εθνικό Αρχαιολογικό Μουσείο</title>
+    <style>
+            /* Dropdown Button */
+         .dropbtn {
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:  #922222;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color:black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+
+</head>
+<body style="overflow-x: hidden;">
+    <section class="sub-header">
+        <nav>
+            <a class='logo' href="../../index.html">ΕΘΝΙΚΟ <span style="font-weight:bold; letter-spacing: 0.2em;">ΑΡΧΑΙΟΛΟΓΙΚΟ ΜΟΥΣΕΙΟ</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="material-icons" onclick="hideMenu()">close</i>
+                <ul>
+                    <li><a href="../../index.html">Αρχική</a></li>
+                    <li><a href="history.html">Ιστορία</a></li>
+                    <li><a href="visit.html">Επίσκεψη</a></li>
+                    <div class="dropdown">
+                        <li><a href="collection.html" class="dropbtn">Συλλογές </a></li>
+                        <div class="dropdown-content">
+                            <a href="subcollectionA1.html">Νεολιθικές Αρχαιότητες</a>
+                            <a href="subcollectionA2.html">Κυκλαδικές Αρχαιότητες</a>
+                            <a href="subcollectionB1.html">Κλασσική Περίοδος</a>
+                            <a href="subcollectionB2.html">Ρωμαϊκή Περίοδος</a>
+                            <a href="subcollectionC1.html">Γεωμετρική Περίοδος</a>
+                            <a href="subcollectionC2.html">Αρχαϊκή Περίοδος (Μεταλλοτεχνία)</a>
+                            <a href="subcollectionD1.html">Αρχαϊκή Περίοδος (Αγγεία)</a>
+                            <a href="subcollectionD2.html">Ύστερη Κλασσική Περίοδος</a>
+                        </div>
+                    </div>
+                    <li><a href="events.html">Εκδηλώσεις</a></li>
+                    <li><a href="search.html">Αναζητήστε Εκθέματα</a>
+                    <li id="login"><a  href="login_prot.html">Είσοδος</a></li>
+                </ul>
+                
+            </div>
+            <i class="material-icons" onclick="showMenu()">menu</i>
+        </nav>
+        <div class="text-box">
+            
+        </div>
+    </section>
+
+    <section class="main">
+        <h2 class="" style="margin-top: 30px;"><b>Το Μουσείο.</b></h2>
+        <div class="awesomeline"></div>
+            <p><span style="color:black;font-weight:bold;line-height: 1.8;">Καλώς ορίσατε στο Εθνικό Αρχαιολογικό Μουσείο.</span>
+            <br>Το Εθνικό Αρχαιολογικό 
+            Μουσείο είναι το μεγαλύτερο μουσείο της Ελλάδας και ένα από τα 
+            σημαντικότερα του κόσμου. Με αρχικό προορισμό να δεχθεί το σύνολο των 
+            ευρημάτων από ανασκαφές του 19ου αιώνα, κυρίως από την Αττική, αλλά και 
+            από άλλες περιοχές της χώρας, σταδιακά πήρε τη μορφή ενός κεντρικού Εθνικού 
+            Αρχαιολογικού Μουσείου και εμπλουτίσθηκε με ευρήματα από όλα τα σημεία του 
+            ελληνικού κόσμου. Οι πλούσιες συλλογές του, που αριθμούν περισσότερα από 11.000 εκθέματα, 
+            προσφέρουν στον επισκέπτη ένα πανόραμα του αρχαίου 
+            ελληνικού πολιτισμού από τις αρχές της προϊστορίας έως την ύστερη αρχαιότητα.
+        </p>
+
+        <h2 class="" style="margin-top:75px"><b>Επίσκεψη.</b></h2>
+        <div class="awesomeline"></div>
+        <div class="contain">
+        <p>Μπορείτε να επισκεφτείτε τις εγκαταστάσεις του Μουσείου μας, και να θαυμάσετε από κοντά τα εκθέματα, οποιαδήποτε εργάσιμη ημέρα, καθώς και τα Σάββατα. Πατώντας τον παρακάτω σύνδεσμο, μπορείτε να βγάλετε online εισιτήριο.
+        <br><a href="ticket.html">Βγάλε Εισιτήριο</a>
+        </p>
+        <img class = "myfix" src="../img/positioninmap.png" alt="χάρτης που δείχνει την θέση του Μουσείου">
+        </div>
+
+        <h2 class="" style="margin-top:75px"><b>Εκθέματα.</b></h2>
+        <div class="awesomeline"></div>
+        <p>Οι μόνιμες εκθέσεις των συλλογών του Εθνικού Αρχαιολογικού Μουσείου περιλαμβάνουν μοναδικά αριστουργήματα της αρχαίας ελληνικής τέχνης που χρονολογούνται από την προϊστορική εποχή έως την κλασσική εποχή.</p>
+        <a href="search.html"style="padding: bottom 10px;">Αναζητήστε εύκολα τα εκθέματα που σας εντυπωσίασαν</a>
+        <div class="photogallery">
+            <ul id ="liphotogallery">
+                <li >
+                    <img id='ex1' src="../img/900_theros.jpg" alt="" title=""> 
+                </li>
+                <li >
+                    <img id='ex2' src="../img/900_theros.jpg" alt="" title=""> 
+                </li>
+                <li >
+                    <img id='ex3' src="../img/900_theros.jpg" alt="" title=""> 
+                </li>
+                <li >
+                    <img id='ex4' src="../img/900_theros.jpg" alt="" title=""> 
+                </li>
+                </ul>
+            </ul>
+        </div>
+        
+        <h2 class="" style="margin-top:75px"><b>Συλλογές.</b></h2>
+        <div class="awesomeline"></div>
+        <p>Περιηγηθείτε στις συλλογές του μουσείου μας.</p>
+
+        <div class="col-carousel">
+            <div class = "goodimg" id = "carousel">
+                <div class="overlay">
+                    <div class="text" id="collink"></div>
+                </div>
+            </div>
+    
+            <div class="carousel_button" id = "carousel_button_left">
+                <button id = "butleft" class="btn-default" onclick='previousColl()'>&#129168;</button>
+            </div>
+            <div class="carousel_button" id = "carousel_button_right">
+                <button type="button" onclick="nextColl()">&#129170;</button>
+            </div>
+            </div>
+    
+
+        <h2 class="" style="margin-top:75px"><b>Εκδηλώσεις.</b></h2>
+        <div class="awesomeline"></div>
+        <p>Συμβαίνει στο Μουσείο! Μάθετε για όλες τις τρέχουσες και προγραμματιζόμενες εκδηλώσεις μας.</p>
+        <a href="events.html">Περιηγηθείτε στις εκδηλώσεις του Μουσείου.</a><br>
+        <p id='showFEvent'>Έκθεση εικαστικών "Η Αλίκη στο Μουσείο των Θαυμάτων" στο Καφέ του Μουσείου.</p>
+        <img id = 'showFImg' src="../img/aliki.jpg" alt="" style="max-width:100%; max-height: 40vh;object-fit: cover;"> 
+        <p></p>
+        </div>
+
+    </section>    
+    <div class="black-footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                <div class="col-md-2 "></div>
+                <div class="col-md-2 col-sm-12 ">
+                <h2 class ="footh2" >Σύνδεσμοι</h2>
+                </div>
+                </div>
+                <div class="row">
+                   
+                    <div class="col-sm-6 col-md-3 item">
+                        <ul>
+                            <li><a href="../index.html">Αρχική</a></li>
+                            <li><a href="history.html">Ιστορία</a></li>
+                            <li><a href="visit.html">Επίσκεψη</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <ul>
+                            <li><a href="collection.html">Συλλογές</a></li>
+                            <li><a href="events.html">Εκδηλώσεις</a></li>
+                            <li><a href="search.html">Αναζήτηστε Εκθέματα</a></li>
+                            <li><a  href="login_prot.html">Είσοδος</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item textf">
+                        <a class='footh1' href="../../index.html" >ΕΘΝΙΚΟ <br><span style="font-weight:bold; letter-spacing: 0.2em;">ΑΡΧΑΙΟΛΟΓΙΚΟ <br> ΜΟΥΣΕΙΟ</span></a>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/namuseum/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/namuseumathens" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/nationalarchaeologicalmuseum/" class="fa fa-instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC8AUjiCKUUOZZ2aPIoXrOrg/videos" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+                <p class="copyright">ΕΑΜ © 2021 by Stamatis Papadopoulos & Konstantinos Palios</p>
+            </div>
+        </footer>
+    </div>
+<script src="../js/main_caroysel.js"></script>
+<script src="../js/loadAImg.js"></script>
+<script src="../js/homepage.js"></script>
+
+<script>
+
+    let navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.width  = "300px";
+    }
+
+    function hideMenu(){
+        navLinks.style.width = "0";
+    }
+
+    // let ekthemataA1 = [];
+    // fetch('/api/homePage/ekthemata_load')
+    // .then(response => response.json())
+    // .then( data => {
+    //     // ekthemataA1 = data;
+    //     // createEkthemata(ekthemataA1);
+    //     for (i=0;i<data.length;i++)
+    //         img.src= data[i][0];
+    // }) 
+    
+
+
+</script>
+    
+    
+</body>
+</html>
