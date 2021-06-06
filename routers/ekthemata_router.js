@@ -6,7 +6,7 @@ let events = [];
 router.get('/subcollectionA1',(req,res) => {
     console.log('i got it')
     const apromise = new Promise((resolve,reject) =>{
-      eventSchema.find({ sub_collection : 'Κυκλαδικός πολιτισμός'},function(err,docs){
+      eventSchema.find({ sub_collection : 'Νεολιθικές Αρχαιότητές'},function(err,docs){
           if(err){
               reject(err);
           }
@@ -27,7 +27,7 @@ router.get('/subcollectionA1',(req,res) => {
   router.get('/subcollectionA2',(req,res) => {
     console.log('i got it')
     const apromise = new Promise((resolve,reject) =>{
-      eventSchema.find({ sub_collection : 'Νεολιθικές Αρχαιότητές'},function(err,docs){
+      eventSchema.find({ sub_collection : 'Κυκλαδικός πολιτισμός'},function(err,docs){
           if(err){
               reject(err);
           }
