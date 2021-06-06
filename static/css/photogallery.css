@@ -8,7 +8,7 @@
 
 }
 .photogallery li{
-    flex:1 0 24%;
+    flex:1 0 20%;
     /* object-fit: cover; */
     
 }
@@ -16,5 +16,6 @@
     max-height: 25vh;
     min-width: 100%;
     object-fit: cover;
+    object-position: top ;
     vertical-align: bottom;
 }
