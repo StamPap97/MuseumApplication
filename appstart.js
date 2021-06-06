@@ -91,7 +91,24 @@ app.use(express.urlencoded({
 }));
 
 app.set('views', path.join(__dirname, '/views/'));
-app.engine('hbs', exphbs({ extname: 'hbs', defaultLayout: 'mainLayout', layoutsDir: __dirname + '/views/layouts/',handlebars: allowInsecurePrototypeAccess(Handlebars)  }));
+app.engine('hbs', exphbs({ extname: 'hbs', defaultLayout: 'mainLayout', layoutsDir: __dirname + '/views/layouts/',handlebars: allowInsecurePrototypeAccess(Handlebars), helpers: {
+  dataFormat: function (data) {
+    if(data == null){
+      return '';
+    }
+    if(data == undefined ){
+      return "";
+    }
+    if(data == new Date(0)){
+      return ""; 
+    }
+    if(Object.prototype.toString.call(data) === '[object Date]'){
+      return data.toISOString().split('T')[0]
+    }
+    return "";
+}  
+}
+}));
 app.set('view engine', 'hbs');
 
 const admin = require('./models/model_admin');
@@ -103,6 +120,8 @@ app.use('/exhibits', exhibitsController);
 app.use('/events', eventsController);
 app.use('/intermediate', intermediateController);
 app.use('/tickets', ticketsController);
+
+
 
 
 

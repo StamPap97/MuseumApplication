@@ -2,7 +2,7 @@ code : 'E04AD838',
 Id_admin : 'admin',
 registration_date : '2018-10-20 4:30:34',
 title : 'Μνήμες 1940-1944 (Μια ανασκαφή στα χρόνια της κατοχής)', 
-start_day : '28 ΟΚΤ 2018 ΚΥΡΙΑΚΗ',
+start_day : 'Oct 28 2018',
 expire_day : ' ',
 img : '',
 text : 'Τιμώντας την εθνική επέτειο

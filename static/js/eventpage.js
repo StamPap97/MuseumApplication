@@ -1,4 +1,5 @@
 
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 const eventlist = document.querySelector('#eventList');
 const buttonSeeMore = document.querySelector('#show_more');
@@ -37,12 +38,14 @@ fetch('/api/give_eventTable')
         
         let startlistElem = document.createElement("p");
         divlistElem.appendChild(startlistElem);
-        console.log(events[i].start_day);
-        startlistElem.innerHTML = events[i].start_day;
+        //console.log(typeof(events[i].start_day));
+        startlistElem.innerHTML = new Date(events[i].start_day).toLocaleDateString('el-El', options);
     
         let endlistElem = document.createElement("p");
         divlistElem.appendChild(endlistElem);
-        endlistElem.innerHTML = events[i].expire_day;
+        if(new Date(events[i].expire_day) <= new Date(events[i].start_day))
+            endlistElem.innerHTML = '';
+        else endlistElem.innerHTML = new Date(events[i].expire_day).toLocaleDateString('el-El', options);
     
       
     }
@@ -86,11 +89,13 @@ function ShowmeMore(){
         
         let startlistElem = document.createElement("p");
         divlistElem.appendChild(startlistElem);
-        startlistElem.innerHTML = events[i].start_day;
+        startlistElem.innerHTML = new Date(events[i].start_day).toLocaleDateString('el-El', options);
     
         let endlistElem = document.createElement("p");
         divlistElem.appendChild(endlistElem);
-        endlistElem.innerHTML = events[i].expire_day;
+        if(new Date(events[i].expire_day) <= new Date(events[i].start_day))
+            endlistElem.innerHTML = '';
+        else endlistElem.innerHTML = new Date(events[i].expire_day).toLocaleDateString('el-El', options);
 
     }
     

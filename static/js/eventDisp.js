@@ -1,3 +1,4 @@
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 const eventTitle = document.querySelector('.eveTitle')
 const eventImg = document.querySelector('.eveimg')
 const eventText = document.querySelector('.textText')
@@ -13,10 +14,10 @@ fetch('/html/event.html/data')
         elTitle.innerHTML = eventObj.title;
         let elDate = document.createElement('h2')
         dateOf.appendChild(elDate)
-        if(eventObj.expire_day.length > 3){
-            elDate.innerHTML = eventObj.start_day + ' | ' + eventObj.expire_day
+        if(new Date(eventObj.expire_day) > new Date(eventObj.start_day)){
+            elDate.innerHTML = new Date(eventObj.start_day).toLocaleDateString('el-El', options) + ' | ' + new Date(eventObj.expire_day).toLocaleDateString('el-El', options) 
         }else{
-            elDate.innerHTML = eventObj.start_day
+            elDate.innerHTML = new Date(eventObj.start_day).toLocaleDateString('el-El', options) 
         }
         let elImg = document.createElement('img');
         eventImg.appendChild(elImg);

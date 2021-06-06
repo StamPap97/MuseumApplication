@@ -58,7 +58,7 @@ function readmyEvent( file, fpath){
         word = word.split('\"').join('');
         word = word.split('\'').join('');
         //console.log(word);
-        objectEvent.start_day= word;
+        objectEvent.start_day= new Date(word);
 
         n = data.search('expire_day');
         name = data.slice(n,data.indexOf(',',n));
@@ -66,7 +66,12 @@ function readmyEvent( file, fpath){
         word = word.split('\"').join('');
         word = word.split('\'').join('');
         //console.log(word);
-        objectEvent.expire_day= word;
+        if(word.length>3){
+          objectEvent.expire_day= new Date(word);
+        }else{
+          objectEvent.expire_day = objectEvent.start_day;
+        }
+        
 
         n = data.search('registration_date');
         name = data.slice(n,data.indexOf(',',n));

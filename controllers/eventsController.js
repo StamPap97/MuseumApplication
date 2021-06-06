@@ -28,6 +28,9 @@ router.post('/', (req, res) => {
                     if (fields._id == ''){
                         console.log(req.session.loggedUserId)
                         fields.img = '../img_ev/' + files.filetoupload.name;
+                        if(fields.expire_day == null){
+                            console.log('i see')
+                        }
                         
                         insertRecord(req, res,fields);
                     }else{
@@ -66,7 +69,12 @@ function insertRecord(req, res,fields) {
     events.title = fields.title; //ok
     events.text = fields.text; //ok
     events.start_day = fields.start_day; //ok
-    events.expire_day= fields.expire_day; //ok
+    if(fields.expire_day == null){
+        events.expire_day = new Date(0);
+    }else{
+        events.expire_day= fields.expire_day; //ok
+    }
+    
     events.img = fields.img; //ok 
     
     console.log('insert body: ', events)

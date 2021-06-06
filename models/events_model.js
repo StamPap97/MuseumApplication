@@ -24,13 +24,12 @@ const eventsSchema = new Schema({
     type:String,  
     required:true} ,
   start_day:{
-    type:String,  
+    type:Date,  
     required:true
   },
   expire_day:{
-    type:String,  
-    required:true,
-    default: ''
+    type:Date,  
+    required:true
   },
   last_change_day:{
     require:true,
