@@ -20,7 +20,7 @@ const login = require('./routers/logRoute');
 const ticketTemp = require('./routers/ticketTempRoote')
 const homepage = require('./routers/homepage_router')
 
-const Port = 3000 || 9999;
+const Port = process.env.PORT || 9999;
 
 app.use(session({
   name: 'login_session',
