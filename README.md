@@ -1,10 +1,17 @@
 # Εφαρμογή υποστήριξης αρχαιολογικού Μουσείου / Archaelogical Museum support application
 
 Εφαρμογή υποστήριξης αρχαιολογικού Μουσείου με τεχνολογίες Express.js, MongoDB, HTML, CSS, Javascript, Bootstrap.
-
 Archaelogical Museum support application using Express.js, MongoDB, HTML, CSS, Javascript, Bootstrap.
 
-Τρέχει με `npm run appstart` (δείτε τα αντίστοιχα script στο `packages.json`)
+Link of git repository https://github.com/StamPap97/MuseumApplication
+Url to Heroku https://museumapplication.herokuapp.com/ (Carefull may have some problems with the functions of admin page)
+
+Η εφαρμογή επίσης συνδέεται και σε clound του Atlas όπου βρίσκεται η βάση δεδομένων
+
+Τρέχει με `node appstart`(ή μπορείτε αν το τρέξετε με nodemon appstart) (δείτε τα αντίστοιχα script στο `packages.json`)
+Αν τρέξετε την παραπάνω εντολή στο localhost και στην θύρα 3000 η 9999 θα μπορέσεται να χρησιμοποιήσετε την παραπάνω εφαρμογή.
+
+Μπορείται να έχεται πρόσβαση στις σελίδες του διαχειριστή, χρησημοποιώντας τον Username admin και για κωδικό 12345admin.
 
 Runs with `npm run appstart` (see the scripts in `packages.json`)
 ## Λεπτομέρειες - Details
@@ -51,9 +58,3 @@ The Events controller is in file `/controllers/eventsController.js`.
 The Exhibits controller is in file `/controllers/exhibitsController.js`.
 
 The Exhibits controller is in file `/controllers/ticketsController.js`.
-
-<!-- ```javascript
-const model = require('../model/task-list-model-no-db.js');
-// const model = require('../model/task-list-model-mongo.js');
-// const model = require('../model/task-list-model-postgres.js');
-``` -->
