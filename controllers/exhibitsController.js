@@ -18,7 +18,8 @@ router.post('/', (req, res) => {
         if(files.filetoupload.name != ''){
             let oldpath = files.filetoupload.path;
 		    let newpath = './static/img_ex/'+ files.filetoupload.name;
-		    fs.rename(oldpath, newpath, function (err) {
+            let rawData = fs.readFileSync(oldpath);
+		    fs.writeFile(newpath, rawData, function (err) {
 			    if (err){
                     throw err
                 }else{
