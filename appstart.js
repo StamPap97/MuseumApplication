@@ -4,6 +4,8 @@ const Handlebars = require('handlebars')
 const mongoose = require('mongoose')
 const express = require("express");
 const session = require('express-session')
+require('dotenv').config();
+
 
 const bodyparser = require('body-parser');
 
