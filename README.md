@@ -1,6 +1,7 @@
 # Εφαρμογή υποστήριξης αρχαιολογικού Μουσείου / Archaelogical Museum support application
 
 Εφαρμογή υποστήριξης αρχαιολογικού Μουσείου με τεχνολογίες Express.js, MongoDB, HTML, CSS, Javascript, Bootstrap.
+
 Archaelogical Museum support application using Express.js, MongoDB, HTML, CSS, Javascript, Bootstrap.
 
 Link of git repository: https://github.com/StamPap97/MuseumApplication.
