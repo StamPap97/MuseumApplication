@@ -4,8 +4,7 @@ const Handlebars = require('handlebars')
 const mongoose = require('mongoose')
 const express = require("express");
 const session = require('express-session')
-require('dotenv').config();
-
+// require('dotenv').config();
 
 const bodyparser = require('body-parser');
 
@@ -21,7 +20,7 @@ const login = require('./routers/logRoute');
 const ticketTemp = require('./routers/ticketTempRoote')
 const homepage = require('./routers/homepage_router')
 
-const Port = process.env.PORT || 9999;
+const Port = 3000 || 9999;
 
 app.use(session({
   name: 'login_session',
