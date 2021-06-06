@@ -65,7 +65,7 @@
 //         //     text : "text goes here 2"
 //         //     }
 // ]
-const eventSchema = require('../../models/events_model');
+const eventSchema = require('../models/events_model');
 const mongoose = require('mongoose');
 const router = require('express').Router();
 let events = []; 
@@ -91,24 +91,5 @@ router.get('',(req,res) => {
     res.status(500).send("pls refresh the page")
   } )
 });
-// const apromise = new Promise((resolve,reject) =>{
-//     eventSchema.find({},function(err,docs){
-//         if(err){
-//             reject(err);
-//         }
-//         else{
-//             events = docs;
-//             resolve('ok');
-//         }
-//     })
-    
-//     });
-//     apromise.then(handleResolved =>{
-//       console.log('successfully disconnected with data to be found')
-//       mongoose.disconnect();
-//     } , handleRejected =>{
-//       console.log(handleRejected);
-//       mongoose.disconnect();
-//     });
   
 module.exports = router;
